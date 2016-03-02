@@ -1,0 +1,12 @@
+<div class="row">
+   <div class="columns small-1"><a ng-click="closeValues();">&times;</a></div>
+   <div class="columns small-11">
+      <h1>
+         {{foodValues.report.food.name}}
+
+      </h1>
+      <div ng-repeat="nutrient in foodValues.report.food.nutrients">
+         <strong>{{nutrient.name}}</strong>: {{nutrient.value}} {{nutrient.unit}}<br>
+      </div>
+   </div>
+</div>
